@@ -20,6 +20,31 @@ npm run seed          # Seed database
 npm run start:dev     # Run server (port 3000)
 ```
 
+### Swagger API Documentation
+
+To view interactive API documentation:
+
+**1. Install Swagger dependencies:**
+```bash
+npm install @nestjs/swagger swagger-ui-express
+```
+
+**2. Start the server:**
+```bash
+npm run start:dev
+```
+
+**3. Open Swagger UI in your browser:**
+```
+http://localhost:3000/api
+```
+
+You'll see all 35+ endpoints with their request/response schemas. Use the "Authorize" button to add your JWT token for testing protected endpoints.
+
+**Test Credentials** (after running seed):
+- Username: `waiter1`, `waiter2`, `waiter3`, or `waiter4`
+- Password: `password123`
+
 ## API Overview
 
 **Base URL**: `http://localhost:3000`
